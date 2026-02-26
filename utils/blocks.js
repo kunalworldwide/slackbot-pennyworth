@@ -477,6 +477,210 @@ function weeklyWrapBlocks(stats) {
   ];
 }
 
+// ─── Speaker Spotlight ──────────────────────────────────
+
+const speakerIntroQuips = [
+  "This one's going to be fire. Bookmark it.",
+  "If you skip this talk, your kubectl will stop working. Probably.",
+  "The kind of talk that makes you rethink your entire architecture on the cab ride home.",
+  "Bring a notebook. Or just screenshot everything. We don't judge.",
+  "This is not a drill. This is a must-attend session.",
+  "Your future self will thank you for attending this one.",
+  "Warning: may cause sudden urge to refactor everything on Monday.",
+];
+
+function speakerSpotlightBlocks(speaker) {
+  const quip = speakerIntroQuips[Math.floor(Math.random() * speakerIntroQuips.length)];
+  const linkedin = speaker.socials?.find(s => s.name === 'linkedin');
+  const linkedinLine = linkedin ? `\n<${linkedin.url}|Connect on LinkedIn>` : '';
+  const descLine = speaker.description ? `\n\n💬 _"${speaker.description.substring(0, 280)}${speaker.description.length > 280 ? '...' : ''}"_` : '';
+
+  return [
+    {
+      type: 'header',
+      text: { type: 'plain_text', text: '🎤 Speaker Spotlight', emoji: true }
+    },
+    { type: 'divider' },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: `⭐ *${speaker.name}*\n_${speaker.role}_\n\n${speaker.bio}${descLine}${linkedinLine}`
+      }
+    },
+    {
+      type: 'context',
+      elements: [
+        {
+          type: 'mrkdwn',
+          text: `${quip} | 📅 March 14, Bengaluru | <https://cloudconf.ai|Get your ticket>`
+        }
+      ]
+    }
+  ];
+}
+
+// ─── Talk Teaser ────────────────────────────────────────
+
+const talkTeaserQuips = [
+  "Clear your calendar for this one.",
+  "This talk alone is worth the ticket price.",
+  "The Slack thread after this talk is going to be legendary.",
+  "Your architecture diagrams will never look the same after this.",
+  "Pro tip: sit in the front row for this one.",
+  "If this doesn't get you hyped, check your pulse.",
+];
+
+function talkTeaserBlocks(talk, speakerData) {
+  const quip = talkTeaserQuips[Math.floor(Math.random() * talkTeaserQuips.length)];
+  const hallEmoji = { 'Hall A': '🅰️', 'Hall B': '🅱️', 'Hall C': '🅲️', 'Board Room': '🏠' }[talk.hall] || '📍';
+
+  let speakerInfo = `🎤 *${talk.speaker}*`;
+  if (speakerData) {
+    speakerInfo += `\n_${speakerData.role}_`;
+  }
+
+  const descLine = talk.description ? `\n\n${talk.description.substring(0, 300)}${talk.description.length > 300 ? '...' : ''}` : '';
+
+  return [
+    {
+      type: 'header',
+      text: { type: 'plain_text', text: '📢 Talk Teaser', emoji: true }
+    },
+    { type: 'divider' },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: `*${talk.title}*\n\n${speakerInfo}\n${hallEmoji} ${talk.hall} | 🕐 ${talk.time}${descLine}`
+      }
+    },
+    {
+      type: 'context',
+      elements: [
+        {
+          type: 'mrkdwn',
+          text: `${quip} | <https://cloudconf.ai|Register for CLOUDxAI 2026>`
+        }
+      ]
+    }
+  ];
+}
+
+// ─── Community Partner Shoutout ─────────────────────────
+
+const partnerQuips = [
+  "Building the CLOUDxAI ecosystem, one community at a time.",
+  "The real cloud-native is the friends we made along the way.",
+  "These communities are the backbone of Bengaluru's tech scene.",
+  "Great conferences don't happen alone. Massive shoutout to our partners.",
+  "If you're not already part of these communities, what are you even doing?",
+];
+
+function partnerShoutoutBlocks(partners) {
+  const quip = partnerQuips[Math.floor(Math.random() * partnerQuips.length)];
+  const partnerLines = partners
+    .map(p => `• *<${p.link}|${p.name}>*`)
+    .join('\n');
+
+  return [
+    {
+      type: 'header',
+      text: { type: 'plain_text', text: '🤝 Community Partner Shoutout', emoji: true }
+    },
+    { type: 'divider' },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: `Huge thanks to these amazing communities for supporting CLOUDxAI 2026!\n\n${partnerLines}\n\n${quip}`
+      }
+    },
+    {
+      type: 'context',
+      elements: [
+        {
+          type: 'mrkdwn',
+          text: 'Want your community featured? Reach out to the CLOUDxAI team! | <https://cloudconf.ai|cloudconf.ai>'
+        }
+      ]
+    }
+  ];
+}
+
+// ─── Countdown Hype Post ────────────────────────────────
+
+const countdownQuips = [
+  "Have you booked your Bengaluru cab yet? IYKYK.",
+  "Your calendar already has a conflict? Cancel it. This is more important.",
+  "Time to update your LinkedIn headline to 'Attending CLOUDxAI 2026'.",
+  "The countdown is real. The FOMO will be realer.",
+  "If you haven't registered yet, this is your sign.",
+  "Fewer days than your average sprint. Let that sink in.",
+];
+
+function countdownHypeBlocks(conferenceDate) {
+  const now = new Date();
+  const conf = new Date(conferenceDate);
+  const diff = conf - now;
+
+  if (diff <= 0) {
+    return [
+      {
+        type: 'section',
+        text: { type: 'mrkdwn', text: "🎉 *CLOUDxAI 2026 is happening RIGHT NOW!* Get to NIMHANS Convention Centre, Bengaluru!" }
+      }
+    ];
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const quip = countdownQuips[Math.floor(Math.random() * countdownQuips.length)];
+
+  return [
+    {
+      type: 'header',
+      text: { type: 'plain_text', text: `⏳ ${days} Days to CLOUDxAI!`, emoji: true }
+    },
+    { type: 'divider' },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: `*${days} days and ${hours} hours* until 500+ engineers take over NIMHANS Convention Centre.\n\n📅 March 14, 2026 | 📍 Bengaluru\n4 Halls | 30+ Talks | Workshops | Panels\n\n${quip}\n\n<https://cloudconf.ai|🎟️ Register now>`
+      }
+    }
+  ];
+}
+
+// ─── LinkedIn-style Announcement Post ───────────────────
+
+function linkedInAnnouncementBlocks(announcement) {
+  return [
+    {
+      type: 'header',
+      text: { type: 'plain_text', text: '📣 From the CLOUDxAI Feed', emoji: true }
+    },
+    { type: 'divider' },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: announcement.text
+      }
+    },
+    {
+      type: 'context',
+      elements: [
+        {
+          type: 'mrkdwn',
+          text: `via <https://www.linkedin.com/company/cloud-x-ai/|CLOUDxAI on LinkedIn> | Give us a follow if you haven't already!`
+        }
+      ]
+    }
+  ];
+}
+
 module.exports = {
   hotTakeBlocks,
   thisOrThatBlocks,
@@ -490,5 +694,10 @@ module.exports = {
   speakerBlocks,
   countdownBlocks,
   leaderboardBlocks,
-  weeklyWrapBlocks
+  weeklyWrapBlocks,
+  speakerSpotlightBlocks,
+  talkTeaserBlocks,
+  partnerShoutoutBlocks,
+  countdownHypeBlocks,
+  linkedInAnnouncementBlocks
 };

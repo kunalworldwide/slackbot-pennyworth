@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ann-01",
+    "text": "🎤 *Speaker Announcement: Ram Iyengar*\n\n_\"Will Kubernetes Vanish Because of AI?\"_\n\nRam Iyengar, Chief Evangelist at Cloud Foundry Foundation, asks the question every infra team is quietly googling.\n\nAI workloads don't behave like microservices. GPU scheduling, model versioning, inference pipelines — K8s wasn't built for this. Or was it?\n\nFind out at CLOUDxAI 2026. March 14, Bengaluru.\n\n<https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-02",
+    "text": "🚀 *Speaker Announcement: Naresh Waswani*\n\n_\"Messaging at Scale: How We Built a Secure, Serverless Notification Platform on AWS\"_\n\n\"Serverless scales… until your messaging system doesn't.\"\n\nReal-world architecture for distributed notification systems. Security patterns for high-scale systems. The stuff that actually breaks at 3 AM.\n\nMarch 14, Bengaluru. <https://cloudconf.ai|🎟️ Get your ticket>"
+  },
+  {
+    "id": "ann-03",
+    "text": "⚡ *Speaker Announcement: Shubham Londhe*\n\n_\"Building Durable AI Agents for DevOps\"_\n\n\"Most AI agent frameworks are built for demos — not for chaos.\"\n\nShubham Londhe from Temporal Technologies tackles non-deterministic LLM behavior in production. What happens when your agent hallucinates mid-deployment?\n\nFind out March 14. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-04",
+    "text": "🤖 *Speaker Announcement: Ravi Shankar*\n\n_\"Autonomous Cloud Optimization Agent: Self-Optimizing Cloud Infrastructure Using AI Agents\"_\n\nAI-driven infrastructure optimization without human intervention. No more manual right-sizing. No more cloud bill surprises (hopefully).\n\n15 years of DevOps experience distilled into one talk. March 14, Bengaluru.\n\n<https://cloudconf.ai|🎟️ Grab your ticket>"
+  },
+  {
+    "id": "ann-05",
+    "text": "🧠 *Speaker Announcement: Savinder Puri*\n\n_\"Your Inner Stack > Your Tech Stack: What 100x Cloud Native Engineers Do Differently\"_\n\nThis isn't a tools talk. This is a mindset talk.\n\nSavinder Puri, Associate VP DevSecOps at Zensar Technologies, on the habits and mental models that separate great engineers from everyone else.\n\nMarch 14, CLOUDxAI. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-06",
+    "text": "🔥 *Panel Alert: \"Agents in Production: What Actually Works (and What Breaks)\"*\n\nPanelists:\n• Kaushik Deb — Associate Director, AI Engineering at Piramal Finance\n• Shashank Karpal — Director of Business Growth at KodeKloud\n• Pramod Singh — Expert Associate Partner, Data Science at Bain & Company\n\nNo slides. No fluff. Just real production war stories about AI agents.\n\nMarch 14, Hall A. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-07",
+    "text": "🔥 *Panel Alert: \"Cloud is starting to think.\"*\n\nPanelists:\n• Rahul Jadhav — Co-founder & CTO at AccuKnox\n• Kunal Kushwaha — Senior Developer Advocate at Cast AI\n• Ram Iyengar — Chief Evangelist at Cloud Foundry Foundation\n• Arsh Goyal\n\nWhen your infrastructure starts making decisions on its own — is that innovation or a nightmare? Let's find out.\n\nHall A, 14:30 - 15:30. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-08",
+    "text": "🛠️ *Workshop Alert: \"From Zero to MCP: Building Kubernetes AI Integrations\"*\n\nInstructors: Matas Kaminskas & Narunas Kapocius\n\nBoard Room | 11:30 - 13:00 (90 min hands-on)\n\nBring your laptop. Leave with a working MCP integration. The best kind of conference ROI.\n\nMarch 14. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-09",
+    "text": "☸️ *Don't miss: \"How BigBasket Uses Kubernetes to Handle Unpredictable Traffic Surges While Optimizing Cost\"*\n\nSushant Gulati, Senior Engineering Manager at BigBasket, shares real production K8s patterns at massive scale.\n\nIf you've ever panic-scaled your cluster during a sale event, this one's for you.\n\nHall A, 11:30. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-10",
+    "text": "🐳 *Speaker Announcement: Ajeet Singh Raina*\n\n_\"The Rise of the Augmented Developer: How AI Agents Are Creating a New Breed of 10x Engineers\"_\n\nDocker Developer Advocate, Collabnix founder, and Distinguished Arm Ambassador.\n\n\"The most valuable developers in 2026 aren't those who type the fastest, but those who direct AI most effectively.\"\n\nHall B, 16:00. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-11",
+    "text": "🔐 *Speaker Announcement: Rahul Jadhav*\n\n_\"The Illusion of Safety with Prompt-Based Guardrails in LLMs\"_\n\nCo-founder & CTO at AccuKnox (Zero-Trust K8s Runtime Security).\n\nYour prompt guardrails? They might be an illusion. Come find out why.\n\nHall A, 14:00. <https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-12",
+    "text": "💰 *GPU costs keeping you up at night?*\n\n_\"From Idle to Invisible: Eliminating GPU Waste with Kubernetes-Native Scale-to-Zero\"_\n\nAbhishek Choudhary & Shubham Rai on how to stop burning money on idle GPUs.\n\nHall C, 12:30. This talk pays for itself.\n\n<https://cloudconf.ai|🎟️ Register>"
+  },
+  {
+    "id": "ann-13",
+    "text": "📊 *CLOUDxAI 2026 by the numbers:*\n\n• 500+ engineers registered\n• 30+ talks across 4 halls\n• 2 panel discussions\n• Hands-on workshops in the Board Room\n• 26 community partners\n• 1 epic day of cloud-native + AI\n\n📅 March 14 | 📍 NIMHANS Convention Centre, Bengaluru\n\n<https://cloudconf.ai|🎟️ Last chance to register>"
+  },
+  {
+    "id": "ann-14",
+    "text": "☁️ *The CLOUDxAI lineup is STACKED.*\n\nKeynotes from Abhishek Veeramalla (CTO, AKVA) and Hitesh Choudhary (Co-founder, Learnyst).\n\nSessions on self-healing infra, GPU optimization, agentic AI, Kubernetes security, and more.\n\nTwo panels. One workshop. Unlimited networking.\n\nSee you March 14? <https://cloudconf.ai|🎟️ Register>"
+  }
+]

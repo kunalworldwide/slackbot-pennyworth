@@ -5,12 +5,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const AGENDA_URL = 'https://raw.githubusercontent.com/kunalworldwide/cloudxai-fest-spark/main-live/app/assets/data/agenda.json';
-const SPEAKERS_URL = 'https://raw.githubusercontent.com/kunalworldwide/cloudxai-fest-spark/main-live/app/assets/data/speakers.json';
+const BASE_URL = 'https://raw.githubusercontent.com/kunalworldwide/cloudxai-fest-spark/main-live/app/assets/data';
+const AGENDA_URL = `${BASE_URL}/agenda.json`;
+const SPEAKERS_URL = `${BASE_URL}/speakers.json`;
+const PARTNERS_URL = `${BASE_URL}/community-partners.json`;
 
 const CACHE_DIR = path.join(__dirname, '..', '.cache');
 const AGENDA_CACHE = path.join(CACHE_DIR, 'agenda.json');
 const SPEAKERS_CACHE = path.join(CACHE_DIR, 'speakers.json');
+const PARTNERS_CACHE = path.join(CACHE_DIR, 'partners.json');
 const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
 
 function ensureCacheDir() {
@@ -144,10 +147,61 @@ async function getLiveSpeakers() {
   return speakers.filter(s => s.visible !== false);
 }
 
+/**
+ * Get community partners list.
+ */
+async function getPartners() {
+  if (isCacheFresh(PARTNERS_CACHE)) {
+    return readCache(PARTNERS_CACHE);
+  }
+  try {
+    const data = await fetchJson(PARTNERS_URL);
+    writeCache(PARTNERS_CACHE, data);
+    console.log('[Fetcher] Partners refreshed from GitHub');
+    return data;
+  } catch (err) {
+    console.warn('[Fetcher] Failed to fetch partners, using cache:', err.message);
+    return readCache(PARTNERS_CACHE) || [];
+  }
+}
+
+/**
+ * Pick a random speaker with bio for spotlight posts.
+ */
+async function getRandomSpeaker() {
+  const speakers = await getLiveSpeakers();
+  const withBio = speakers.filter(s => s.bio && s.bio.length > 50);
+  return withBio[Math.floor(Math.random() * withBio.length)];
+}
+
+/**
+ * Pick a random talk (non-TBA, non-break) for talk teaser posts.
+ */
+async function getRandomTalk() {
+  const schedule = await getLiveSchedule();
+  const realTalks = schedule.talks.filter(t =>
+    t.title !== 'Coming Soon' && t.speaker && t.speaker !== 'TBA'
+  );
+  return realTalks[Math.floor(Math.random() * realTalks.length)];
+}
+
+/**
+ * Pick a random batch of partners for shoutout posts.
+ */
+async function getRandomPartners(count = 3) {
+  const partners = await getPartners();
+  const shuffled = [...partners].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+}
+
 module.exports = {
   getAgenda,
   getSpeakers,
   getSpeakerMap,
   getLiveSchedule,
-  getLiveSpeakers
+  getLiveSpeakers,
+  getPartners,
+  getRandomSpeaker,
+  getRandomTalk,
+  getRandomPartners
 };
