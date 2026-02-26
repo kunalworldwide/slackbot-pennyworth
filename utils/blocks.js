@@ -1,5 +1,5 @@
 /**
- * Block Kit message builders for NimbusBot.
+ * Block Kit message builders for PennyworthBot.
  * All functions return Slack Block Kit block arrays.
  */
 
@@ -31,7 +31,7 @@ function hotTakeBlocks(take) {
       elements: [
         {
           type: 'mrkdwn',
-          text: '_Brought to you by NimbusBot — your friendly neighborhood SRE who reads arxiv_ ☁️'
+          text: '_Brought to you by PennyworthBot — your friendly neighborhood SRE who reads arxiv_ ☁️'
         }
       ]
     }

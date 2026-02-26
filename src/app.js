@@ -8,7 +8,7 @@ const { startScheduler } = require('./scheduler');
 
 // ─── Boot ──────────────────────────────────────────────
 console.log(`
-  ☁️  NimbusBot — CLOUDxAI Community Slack Bot
+  ☁️  PennyworthBot — CLOUDxAI Community Slack Bot
   ─────────────────────────────────────────────
   Conference: March 14, 2026 — Bengaluru, India
   https://cloudconf.ai
@@ -33,7 +33,7 @@ const healthServer = http.createServer((req, res) => {
   if (req.url === '/health' || req.url === '/') {
     if (healthy) {
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ status: 'ok', bot: 'NimbusBot', uptime: process.uptime() }));
+      res.end(JSON.stringify({ status: 'ok', bot: 'PennyworthBot', uptime: process.uptime() }));
     } else {
       res.writeHead(503, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ status: 'starting' }));
@@ -66,7 +66,7 @@ registerEvents(app);
     await app.start();
     healthy = true;
 
-    console.log('⚡ NimbusBot is running!');
+    console.log('⚡ PennyworthBot is running!');
     console.log(`   Socket Mode: enabled`);
     console.log(`   Health check: port ${PORT}`);
     console.log(`   Timezone: ${process.env.TZ || 'Asia/Kolkata'}`);
@@ -78,7 +78,7 @@ registerEvents(app);
 
     console.log('✅ All systems nominal. That\'s a 200 OK. ☁️');
   } catch (err) {
-    console.error('Failed to start NimbusBot:', err);
+    console.error('Failed to start PennyworthBot:', err);
     process.exit(1);
   }
 })();

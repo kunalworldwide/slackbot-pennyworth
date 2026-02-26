@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# ─── NimbusBot Cloud Run Deployment ─────────────────────
+# ─── PennyworthBot Cloud Run Deployment ─────────────────────
 # Usage: ./deploy.sh
 #
 # Prerequisites:
@@ -15,7 +15,7 @@ REGION="${GCP_REGION:-asia-south1}"
 SERVICE_NAME="nimbusbot"
 IMAGE="gcr.io/${PROJECT_ID}/${SERVICE_NAME}"
 
-echo "☁️  Deploying NimbusBot to Cloud Run"
+echo "☁️  Deploying PennyworthBot to Cloud Run"
 echo "   Project:  ${PROJECT_ID}"
 echo "   Region:   ${REGION}"
 echo "   Service:  ${SERVICE_NAME}"
@@ -83,7 +83,7 @@ gcloud run deploy "$SERVICE_NAME" \
   --quiet
 
 echo ""
-echo "✅ NimbusBot deployed successfully!"
+echo "✅ PennyworthBot deployed successfully!"
 echo ""
 SERVICE_URL=$(gcloud run services describe "$SERVICE_NAME" --region="$REGION" --format='value(status.url)')
 echo "   Service URL: ${SERVICE_URL}"

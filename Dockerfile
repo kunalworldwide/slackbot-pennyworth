@@ -14,9 +14,9 @@ COPY utils/ ./utils/
 COPY content/ ./content/
 
 # Non-root user for security
-RUN addgroup --system nimbus && adduser --system --ingroup nimbus nimbus
-RUN mkdir -p /app/.cache && chown -R nimbus:nimbus /app
-USER nimbus
+RUN addgroup --system pennyworth && adduser --system --ingroup pennyworth pennyworth
+RUN mkdir -p /app/.cache && chown -R pennyworth:pennyworth /app
+USER pennyworth
 
 # Cloud Run uses PORT env var (default 8080)
 ENV PORT=8080

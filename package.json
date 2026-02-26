@@ -1,7 +1,7 @@
 {
   "name": "cloudxai-bot",
   "version": "1.0.0",
-  "description": "NimbusBot — Slack bot for the CLOUDxAI conference community",
+  "description": "PennyworthBot — Slack bot for the CLOUDxAI conference community",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",

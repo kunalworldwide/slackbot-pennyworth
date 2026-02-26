@@ -1,4 +1,4 @@
-# NimbusBot — CLOUDxAI Community Slack Bot
+# PennyworthBot — CLOUDxAI Community Slack Bot
 
 <p align="center">
   <img src="https://img.shields.io/badge/node-%3E%3D18-green" alt="Node.js">
@@ -14,7 +14,7 @@ A witty, technically sharp Slack bot for the [CLOUDxAI](https://cloudconf.ai) co
 
 ## What It Does
 
-NimbusBot automates community engagement for the CLOUDxAI Slack workspace:
+PennyworthBot automates community engagement for the CLOUDxAI Slack workspace:
 
 - **Daily scheduled posts** — hot takes, tech matchups, quizzes, polls, icebreakers, and meme prompts on a weekly rotation
 - **Live conference data** — schedule and speaker info fetched directly from the [CLOUDxAI website repo](https://github.com/kunalworldwide/cloudxai-fest-spark), always up to date
@@ -114,7 +114,7 @@ cloudxai-bot/
 ### 1. Create a Slack App
 
 1. Go to [api.slack.com/apps](https://api.slack.com/apps) → **Create New App** → **From scratch**
-2. Name it `NimbusBot` and select your workspace
+2. Name it `PennyworthBot` and select your workspace
 
 ### 2. Bot Permissions
 
@@ -210,7 +210,7 @@ railway login && railway init && railway up
 
 ```ini
 [Unit]
-Description=NimbusBot
+Description=PennyworthBot
 After=network.target
 
 [Service]

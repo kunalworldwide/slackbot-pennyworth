@@ -9,4 +9,4 @@ data.json
 .DS_Store
 README.md
 test-*.js
-nimbus.db
+pennyworth.db

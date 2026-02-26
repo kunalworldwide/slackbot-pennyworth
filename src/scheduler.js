@@ -75,7 +75,7 @@ function extractFallbackText(messageBlocks) {
       return block.text.text.replace(/[*_~`]/g, '').substring(0, 200);
     }
   }
-  return 'New post from NimbusBot';
+  return 'New post from PennyworthBot';
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -255,7 +255,7 @@ function startScheduler(app) {
         await client.chat.postMessage({
           channel: channelId,
           blocks: blocks.weeklyWrapBlocks(stats),
-          text: 'Weekly wrap-up from NimbusBot'
+          text: 'Weekly wrap-up from PennyworthBot'
         });
         console.log('[Scheduler] Posted weekly wrap');
       }
