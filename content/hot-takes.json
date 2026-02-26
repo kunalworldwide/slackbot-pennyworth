@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ht-01",
+    "text": "Terraform will be irrelevant in 3 years. AI agents will generate and apply infra changes directly.",
+    "tags": ["iac", "ai-agents"]
+  },
+  {
+    "id": "ht-02",
+    "text": "Service meshes are the new SOAP. Fight me.",
+    "tags": ["service-mesh", "hot-take"]
+  },
+  {
+    "id": "ht-03",
+    "text": "If your AI agent can't roll back its own deployment, it's just a fancy cron job.",
+    "tags": ["ai-agents", "deployments"]
+  },
+  {
+    "id": "ht-04",
+    "text": "The best observability tool is an engineer who actually reads the logs.",
+    "tags": ["observability", "culture"]
+  },
+  {
+    "id": "ht-05",
+    "text": "RAG is just ETL with a marketing budget.",
+    "tags": ["rag", "llm", "data-engineering"]
+  },
+  {
+    "id": "ht-06",
+    "text": "Platform engineering is just DevOps rebranded by people who got tired of being on-call.",
+    "tags": ["platform-engineering", "devops"]
+  },
+  {
+    "id": "ht-07",
+    "text": "Running LLMs on Kubernetes is like driving a Formula 1 car in Bengaluru traffic. Technically possible, practically unhinged.",
+    "tags": ["kubernetes", "llm", "gpu"]
+  },
+  {
+    "id": "ht-08",
+    "text": "If you're not using eBPF for observability in 2026, you're basically reading tea leaves.",
+    "tags": ["ebpf", "observability"]
+  },
+  {
+    "id": "ht-09",
+    "text": "Multi-cloud is just multi-bill. Nobody actually runs stateful workloads across three providers. Nobody.",
+    "tags": ["multi-cloud", "architecture"]
+  },
+  {
+    "id": "ht-10",
+    "text": "The 'shift left' movement has shifted so far left it's now the developer's problem to also be a network engineer, security analyst, and DBA. Cool cool cool.",
+    "tags": ["shift-left", "developer-experience"]
+  },
+  {
+    "id": "ht-11",
+    "text": "YAML engineers are the most underpaid systems architects on the planet.",
+    "tags": ["kubernetes", "yaml", "culture"]
+  },
+  {
+    "id": "ht-12",
+    "text": "Your 'microservices architecture' is just a distributed monolith with extra network latency and a Jira board.",
+    "tags": ["microservices", "architecture"]
+  },
+  {
+    "id": "ht-13",
+    "text": "AI agents will replace the on-call engineer before they replace the software engineer. And honestly? Good.",
+    "tags": ["ai-agents", "on-call", "sre"]
+  },
+  {
+    "id": "ht-14",
+    "text": "Scale-to-zero is the most underrated feature in cloud computing. If your GPU pods aren't doing it, you're burning money for fun.",
+    "tags": ["gpu", "cost-optimization", "serverless"]
+  },
+  {
+    "id": "ht-15",
+    "text": "The Kubernetes ecosystem has more CNCF projects than actual production users of those projects.",
+    "tags": ["cncf", "kubernetes", "ecosystem"]
+  },
+  {
+    "id": "ht-16",
+    "text": "Prompt engineering is not engineering. It's just talking to a computer with extra steps and a LinkedIn title.",
+    "tags": ["llm", "ai", "culture"]
+  }
+]

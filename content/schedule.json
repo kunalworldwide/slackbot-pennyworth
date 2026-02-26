@@ -1,0 +1,94 @@
+{
+  "conference": {
+    "name": "CLOUDxAI 2026",
+    "date": "March 14, 2026",
+    "venue": "NIMHANS Convention Centre, Bengaluru, India",
+    "doors_open": "8:50 AM IST",
+    "url": "https://cloudconf.ai",
+    "registration_url": "https://cloudconf.ai"
+  },
+  "tracks": [
+    {
+      "name": "Cloud-Native AI",
+      "emoji": "🤖",
+      "description": "Building and deploying AI-powered applications on cloud-native infrastructure"
+    },
+    {
+      "name": "Intelligent Automation",
+      "emoji": "🔧",
+      "description": "Self-healing systems, AI-driven operations, and autonomous infrastructure"
+    },
+    {
+      "name": "LLMOps",
+      "emoji": "🧠",
+      "description": "Production LLM deployment, optimization, monitoring, and cost management"
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "emoji": "🕸️",
+      "description": "Orchestrating AI agents, agent communication patterns, and multi-agent architectures"
+    }
+  ],
+  "talks": [
+    {
+      "title": "Keynote: The Future of Intelligent Infrastructure",
+      "speaker": "TBA",
+      "track": "Cloud-Native AI",
+      "time": "9:00 AM"
+    },
+    {
+      "title": "Running 70B Parameter Models on Kubernetes Without Selling Your Kidney",
+      "speaker": "TBA",
+      "track": "LLMOps",
+      "time": "10:00 AM"
+    },
+    {
+      "title": "Self-Healing Infrastructure: From Alert to Resolution in Under 60 Seconds",
+      "speaker": "TBA",
+      "track": "Intelligent Automation",
+      "time": "10:45 AM"
+    },
+    {
+      "title": "Building Production Multi-Agent Systems That Don't Loop Forever",
+      "speaker": "TBA",
+      "track": "Multi-Agent Systems",
+      "time": "11:30 AM"
+    },
+    {
+      "title": "GPU Cost Optimization: A Survival Guide for Startups",
+      "speaker": "TBA",
+      "track": "Cloud-Native AI",
+      "time": "12:15 PM"
+    },
+    {
+      "title": "eBPF-Powered Observability for AI Workloads",
+      "speaker": "TBA",
+      "track": "Intelligent Automation",
+      "time": "2:00 PM"
+    },
+    {
+      "title": "RAG in Production: Lessons From Serving 10M Queries/Day",
+      "speaker": "TBA",
+      "track": "LLMOps",
+      "time": "2:45 PM"
+    },
+    {
+      "title": "Agent-to-Agent Communication: Patterns That Actually Scale",
+      "speaker": "TBA",
+      "track": "Multi-Agent Systems",
+      "time": "3:30 PM"
+    },
+    {
+      "title": "Platform Engineering for AI Teams: Building the Internal Developer Platform",
+      "speaker": "TBA",
+      "track": "Cloud-Native AI",
+      "time": "4:15 PM"
+    },
+    {
+      "title": "Closing Panel: Where Cloud-Native Meets AI — What's Next?",
+      "speaker": "Panel",
+      "track": "Cloud-Native AI",
+      "time": "5:00 PM"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "tot-01",
+    "option_a": "vLLM",
+    "option_b": "TensorRT-LLM",
+    "context": "For LLM serving in production",
+    "tags": ["llm", "inference"]
+  },
+  {
+    "id": "tot-02",
+    "option_a": "Kubernetes",
+    "option_b": "Nomad",
+    "context": "For container orchestration in 2026",
+    "tags": ["orchestration", "containers"]
+  },
+  {
+    "id": "tot-03",
+    "option_a": "Self-hosted on K8s",
+    "option_b": "Managed API (OpenAI/Bedrock)",
+    "context": "AI model serving for a startup",
+    "tags": ["ai", "deployment"]
+  },
+  {
+    "id": "tot-04",
+    "option_a": "ArgoCD",
+    "option_b": "Flux",
+    "context": "GitOps tool of choice",
+    "tags": ["gitops", "cd"]
+  },
+  {
+    "id": "tot-05",
+    "option_a": "Terraform/OpenTofu",
+    "option_b": "Pulumi",
+    "context": "For IaC in 2026",
+    "tags": ["iac", "infrastructure"]
+  },
+  {
+    "id": "tot-06",
+    "option_a": "Prometheus + Grafana",
+    "option_b": "Datadog",
+    "context": "Observability stack for a 200-service platform",
+    "tags": ["observability", "monitoring"]
+  },
+  {
+    "id": "tot-07",
+    "option_a": "Fine-tuning",
+    "option_b": "RAG",
+    "context": "Customizing LLMs for your domain",
+    "tags": ["llm", "ai"]
+  },
+  {
+    "id": "tot-08",
+    "option_a": "Spot/Preemptible instances",
+    "option_b": "Reserved instances",
+    "context": "GPU cost optimization for ML training",
+    "tags": ["gpu", "cost-optimization"]
+  },
+  {
+    "id": "tot-09",
+    "option_a": "LangChain/LangGraph",
+    "option_b": "Build your own orchestration",
+    "context": "For production AI agent pipelines",
+    "tags": ["ai-agents", "frameworks"]
+  },
+  {
+    "id": "tot-10",
+    "option_a": "Cilium",
+    "option_b": "Calico",
+    "context": "Kubernetes CNI for a security-first cluster",
+    "tags": ["kubernetes", "networking"]
+  },
+  {
+    "id": "tot-11",
+    "option_a": "Cloud Run / Serverless",
+    "option_b": "Kubernetes",
+    "context": "Hosting agentic AI workloads",
+    "tags": ["serverless", "kubernetes", "ai-agents"]
+  },
+  {
+    "id": "tot-12",
+    "option_a": "Backstage",
+    "option_b": "Port",
+    "context": "Internal developer portal",
+    "tags": ["platform-engineering", "developer-experience"]
+  },
+  {
+    "id": "tot-13",
+    "option_a": "Weaviate",
+    "option_b": "Pinecone",
+    "context": "Vector database for RAG in production",
+    "tags": ["rag", "vector-db"]
+  },
+  {
+    "id": "tot-14",
+    "option_a": "Docker Compose",
+    "option_b": "Kubernetes (Kind/Minikube)",
+    "context": "Local development environment for microservices",
+    "tags": ["docker", "kubernetes", "dev-environment"]
+  },
+  {
+    "id": "tot-15",
+    "option_a": "GitHub Actions",
+    "option_b": "GitLab CI",
+    "context": "CI/CD for a cloud-native team in 2026",
+    "tags": ["ci-cd", "devops"]
+  },
+  {
+    "id": "tot-16",
+    "option_a": "MCP (Model Context Protocol)",
+    "option_b": "Custom tool APIs",
+    "context": "Connecting AI agents to external tools",
+    "tags": ["ai-agents", "mcp", "tooling"]
+  }
+]

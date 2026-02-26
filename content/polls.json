@@ -1,0 +1,102 @@
+[
+  {
+    "id": "poll-01",
+    "question": "Which CLOUDxAI track are you most hyped for?",
+    "options": [
+      { "emoji": "🤖", "text": "Cloud-Native AI" },
+      { "emoji": "🔧", "text": "Intelligent Automation" },
+      { "emoji": "🧠", "text": "LLMOps" },
+      { "emoji": "🕸️", "text": "Multi-Agent Systems" }
+    ]
+  },
+  {
+    "id": "poll-02",
+    "question": "What's your biggest infrastructure headache right now?",
+    "options": [
+      { "emoji": "💸", "text": "Cloud costs spiraling out of control" },
+      { "emoji": "🐛", "text": "Debugging distributed systems" },
+      { "emoji": "🔐", "text": "Security & compliance" },
+      { "emoji": "🏗️", "text": "Scaling AI/ML workloads" }
+    ]
+  },
+  {
+    "id": "poll-03",
+    "question": "How are you deploying AI models in production?",
+    "options": [
+      { "emoji": "☸️", "text": "Kubernetes + custom serving" },
+      { "emoji": "🏢", "text": "Managed services (SageMaker, Vertex AI)" },
+      { "emoji": "🚀", "text": "Serverless (Cloud Run, Lambda)" },
+      { "emoji": "🤷", "text": "Still figuring it out" }
+    ]
+  },
+  {
+    "id": "poll-04",
+    "question": "Your team's on-call philosophy?",
+    "options": [
+      { "emoji": "📟", "text": "Follow-the-sun rotation" },
+      { "emoji": "🤖", "text": "AI-assisted incident response" },
+      { "emoji": "😅", "text": "Whoever last touched the code" },
+      { "emoji": "🙏", "text": "We pray to the SLA gods" }
+    ]
+  },
+  {
+    "id": "poll-05",
+    "question": "What's the most overhyped tech trend of 2026?",
+    "options": [
+      { "emoji": "🤖", "text": "AI agents doing everything" },
+      { "emoji": "☸️", "text": "Kubernetes for literally every workload" },
+      { "emoji": "🏗️", "text": "Platform engineering" },
+      { "emoji": "🔗", "text": "Blockchain (yes, still)" }
+    ]
+  },
+  {
+    "id": "poll-06",
+    "question": "Which CLOUDxAI hall are you camping in all day?",
+    "options": [
+      { "emoji": "🅰️", "text": "Hall A — Keynotes & Panels" },
+      { "emoji": "🅱️", "text": "Hall B — Deep dives" },
+      { "emoji": "🅲️", "text": "Hall C — Cloud & AI sessions" },
+      { "emoji": "🏠", "text": "Board Room — Workshops" }
+    ]
+  },
+  {
+    "id": "poll-07",
+    "question": "Your preferred way to learn about new infra tools?",
+    "options": [
+      { "emoji": "📺", "text": "YouTube / Conference talks" },
+      { "emoji": "📝", "text": "Blog posts & docs" },
+      { "emoji": "💻", "text": "Build something and break it" },
+      { "emoji": "🗣️", "text": "Ask someone who's already in production with it" }
+    ]
+  },
+  {
+    "id": "poll-08",
+    "question": "How many Kubernetes clusters does your org run?",
+    "options": [
+      { "emoji": "1️⃣", "text": "Just 1 (we're focused)" },
+      { "emoji": "✌️", "text": "2-5 clusters" },
+      { "emoji": "🤯", "text": "10+ (multi-cluster life)" },
+      { "emoji": "🚫", "text": "Zero — we went serverless" }
+    ]
+  },
+  {
+    "id": "poll-09",
+    "question": "What would make CLOUDxAI 2027 even better?",
+    "options": [
+      { "emoji": "🛠️", "text": "More hands-on workshops" },
+      { "emoji": "🎤", "text": "Unconference / lightning talks" },
+      { "emoji": "🌐", "text": "Hybrid / virtual option" },
+      { "emoji": "🍕", "text": "Better food (always valid)" }
+    ]
+  },
+  {
+    "id": "poll-10",
+    "question": "Biggest reason you're attending CLOUDxAI?",
+    "options": [
+      { "emoji": "🧠", "text": "Learning from expert talks" },
+      { "emoji": "🤝", "text": "Networking with peers" },
+      { "emoji": "🔍", "text": "Exploring new tools & vendors" },
+      { "emoji": "🎉", "text": "Vibes and community energy" }
+    ]
+  }
+]

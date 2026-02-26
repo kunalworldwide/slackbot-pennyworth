@@ -1,0 +1,194 @@
+[
+  {
+    "id": "q-01",
+    "question": "What Kubernetes resource would you use to run a one-time batch job?",
+    "options": {
+      "A": "Deployment",
+      "B": "Job",
+      "C": "DaemonSet",
+      "D": "StatefulSet"
+    },
+    "answer": "B",
+    "explanation": "A Job creates one or more Pods and ensures a specified number of them successfully terminate. Deployments are for long-running services, DaemonSets run on every node, and StatefulSets are for stateful workloads."
+  },
+  {
+    "id": "q-02",
+    "question": "In a multi-agent system, what pattern prevents infinite agent loops?",
+    "options": {
+      "A": "Circuit breaker",
+      "B": "Saga pattern",
+      "C": "Supervisor hierarchy",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Circuit breakers stop cascading calls, sagas manage rollback chains, and supervisor hierarchies enforce termination policies. In practice, you'd combine all three for robust loop prevention."
+  },
+  {
+    "id": "q-03",
+    "question": "What's the default resource limit for a container in Kubernetes if none is specified?",
+    "options": {
+      "A": "512Mi",
+      "B": "No limit",
+      "C": "256Mi",
+      "D": "1Gi"
+    },
+    "answer": "B",
+    "explanation": "By default, Kubernetes does not enforce any resource limits on containers. Without explicit limits, a container can consume all available resources on the node — which is why LimitRanges and ResourceQuotas exist."
+  },
+  {
+    "id": "q-04",
+    "question": "What does the 'RT' in TensorRT stand for?",
+    "options": {
+      "A": "Real-Time",
+      "B": "Runtime",
+      "C": "Ray Tracing",
+      "D": "Rapid Training"
+    },
+    "answer": "B",
+    "explanation": "TensorRT = Tensor Runtime. It's NVIDIA's SDK for high-performance deep learning inference optimization."
+  },
+  {
+    "id": "q-05",
+    "question": "In Kubernetes, which object ensures exactly one Pod runs on each node?",
+    "options": {
+      "A": "ReplicaSet",
+      "B": "StatefulSet",
+      "C": "DaemonSet",
+      "D": "Deployment"
+    },
+    "answer": "C",
+    "explanation": "DaemonSets ensure that all (or some) nodes run a copy of a Pod. Classic use cases: log collectors, monitoring agents, network plugins."
+  },
+  {
+    "id": "q-06",
+    "question": "Which quantization method is most commonly used to run 70B parameter LLMs on consumer GPUs?",
+    "options": {
+      "A": "INT8",
+      "B": "GPTQ/AWQ (4-bit)",
+      "C": "FP16",
+      "D": "BF16"
+    },
+    "answer": "B",
+    "explanation": "GPTQ and AWQ are 4-bit quantization methods that shrink 70B models to ~35GB, fitting on 2x24GB consumer GPUs. FP16/BF16 would need ~140GB VRAM — that's 'I have a budget' territory."
+  },
+  {
+    "id": "q-07",
+    "question": "Which Kubernetes feature allows you to inject failure for chaos engineering natively?",
+    "options": {
+      "A": "PodDisruptionBudget",
+      "B": "NetworkPolicy",
+      "C": "There's no native feature — you need tools like LitmusChaos",
+      "D": "ChaosPolicy (added in 1.29)"
+    },
+    "answer": "C",
+    "explanation": "Kubernetes doesn't have native chaos injection. You need external tools like LitmusChaos, Chaos Mesh, or Gremlin. PodDisruptionBudgets actually *prevent* disruption."
+  },
+  {
+    "id": "q-08",
+    "question": "In vector databases used for RAG, what does 'HNSW' stand for?",
+    "options": {
+      "A": "Hierarchical Navigable Small World",
+      "B": "Hash-based Nearest Search Weights",
+      "C": "Hybrid Neural Semantic Windowing",
+      "D": "High-dimensional Normalized Search Width"
+    },
+    "answer": "A",
+    "explanation": "HNSW = Hierarchical Navigable Small World. It's a graph-based approximate nearest neighbor algorithm used in most vector DBs like Pinecone, Weaviate, and pgvector."
+  },
+  {
+    "id": "q-09",
+    "question": "What's the purpose of a Kubernetes 'Finalizer'?",
+    "options": {
+      "A": "To encrypt secrets at rest",
+      "B": "To run cleanup logic before an object is deleted",
+      "C": "To finalize a rolling update",
+      "D": "To lock a resource from being modified"
+    },
+    "answer": "B",
+    "explanation": "Finalizers are keys on resources that signal pre-delete hooks. They block deletion until the controller removes the finalizer, allowing cleanup of external resources like cloud load balancers or DNS records."
+  },
+  {
+    "id": "q-10",
+    "question": "What does MCP stand for in the context of AI agent tooling?",
+    "options": {
+      "A": "Model Compute Protocol",
+      "B": "Multi-Chain Processing",
+      "C": "Model Context Protocol",
+      "D": "Managed Cloud Pipeline"
+    },
+    "answer": "C",
+    "explanation": "MCP = Model Context Protocol. It's a standard for connecting AI models to external tools, data sources, and APIs — think of it as USB-C for AI agents."
+  },
+  {
+    "id": "q-11",
+    "question": "What is 'scale-to-zero' in serverless/Kubernetes context?",
+    "options": {
+      "A": "Deleting all replicas permanently",
+      "B": "Scaling pods to zero when idle, spinning up on demand",
+      "C": "Setting resource requests to zero",
+      "D": "Disabling autoscaling"
+    },
+    "answer": "B",
+    "explanation": "Scale-to-zero means removing all running instances when there's no traffic, and spinning them back up when requests arrive. KEDA, Knative, and Cloud Run all support this — critical for GPU cost optimization."
+  },
+  {
+    "id": "q-12",
+    "question": "In the context of LLM deployment, what is KV cache?",
+    "options": {
+      "A": "A key-value store for model weights",
+      "B": "Cached key-value attention tensors from previously generated tokens",
+      "C": "A configuration cache for Kubernetes volumes",
+      "D": "A distributed cache layer between model replicas"
+    },
+    "answer": "B",
+    "explanation": "KV cache stores the key and value attention tensors from already-processed tokens, avoiding redundant computation during autoregressive generation. It's why vLLM's PagedAttention was such a breakthrough."
+  },
+  {
+    "id": "q-13",
+    "question": "Which Google Cloud service is best suited for bursty, stateless agentic AI workloads?",
+    "options": {
+      "A": "GKE Autopilot",
+      "B": "Cloud Run",
+      "C": "Compute Engine",
+      "D": "Cloud Functions"
+    },
+    "answer": "B",
+    "explanation": "Cloud Run offers serverless containers with scale-to-zero, long request timeouts, and per-second billing — ideal for agentic workloads that are bursty and may have long-running executions."
+  },
+  {
+    "id": "q-14",
+    "question": "What does eBPF stand for?",
+    "options": {
+      "A": "Extended Berkeley Packet Filter",
+      "B": "Elastic Bytecode Processing Framework",
+      "C": "Event-Based Programmable Functions",
+      "D": "Enterprise Backend Processing Filter"
+    },
+    "answer": "A",
+    "explanation": "eBPF = Extended Berkeley Packet Filter. Originally for packet filtering, it now powers observability, networking (Cilium), and security tooling by running sandboxed programs in the Linux kernel."
+  },
+  {
+    "id": "q-15",
+    "question": "What's the maximum number of containers recommended per Pod in Kubernetes best practices?",
+    "options": {
+      "A": "1 (strictly)",
+      "B": "No hard limit, but sidecar pattern suggests 2-3",
+      "C": "5",
+      "D": "10"
+    },
+    "answer": "B",
+    "explanation": "There's no hard limit, but best practice is 1 main container + sidecar(s). Common sidecars: log shippers, service mesh proxies, config reloaders. If you have 7 containers in a Pod, you have a monolith with extra steps."
+  },
+  {
+    "id": "q-16",
+    "question": "What is a 'hallucination' in the context of LLMs?",
+    "options": {
+      "A": "A GPU memory overflow error",
+      "B": "The model generating confident but factually incorrect information",
+      "C": "A training data leak",
+      "D": "A prompt injection attack"
+    },
+    "answer": "B",
+    "explanation": "LLM hallucination is when the model generates plausible-sounding but factually wrong content with full confidence. This is why RAG, grounding, and citation systems exist — and why you never let an ungrounded agent write your Terraform."
+  }
+]

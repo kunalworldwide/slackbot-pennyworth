@@ -1,0 +1,21 @@
+{
+  "name": "cloudxai-bot",
+  "version": "1.0.0",
+  "description": "NimbusBot — Slack bot for the CLOUDxAI conference community",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.1.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

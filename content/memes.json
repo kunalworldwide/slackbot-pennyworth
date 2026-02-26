@@ -1,0 +1,52 @@
+[
+  {
+    "id": "meme-01",
+    "template": "Drake meme",
+    "prompt": "Drake meme template 🎭\n\n❌ Top panel: Writing Kubernetes YAML by hand\n✅ Bottom panel: ???\n\nDrop your best bottom panel caption. Best one gets pinned. Go."
+  },
+  {
+    "id": "meme-02",
+    "template": "Distracted boyfriend",
+    "prompt": "Distracted Boyfriend meme template 🎭\n\n👦 My engineering team\n👩 Our perfectly working current stack\n👧 ???\n\nWhat's the shiny distraction? Caption it."
+  },
+  {
+    "id": "meme-03",
+    "template": "This is fine",
+    "prompt": "🐶🔥 This Is Fine meme template\n\nThe dog is your on-call engineer.\nThe fire is ???\n\nCaption the fire. Most relatable one wins."
+  },
+  {
+    "id": "meme-04",
+    "template": "Two buttons",
+    "prompt": "😰 Two Buttons meme template\n\nButton 1: Fix the bug properly\nButton 2: ???\n\nWhat's the second button your team always reaches for? Caption it."
+  },
+  {
+    "id": "meme-05",
+    "template": "Expanding brain",
+    "prompt": "🧠 Expanding Brain meme template — deployment edition\n\n🧠 Level 1: Manual SSH deploy\n🧠🧠 Level 2: CI/CD pipeline\n🧠🧠🧠 Level 3: GitOps\n🧠🧠🧠🧠 Level 4: ???\n\nWhat's the galaxy brain deployment method? Caption Level 4."
+  },
+  {
+    "id": "meme-06",
+    "template": "Is this a pigeon?",
+    "prompt": "🦋 'Is this a pigeon?' meme template\n\nPerson: Junior DevOps engineer\nButterfly: A single 502 error\nCaption: 'Is this a ???'\n\nWhat do they think the 502 means? Caption it."
+  },
+  {
+    "id": "meme-07",
+    "template": "Gru's plan",
+    "prompt": "😈 Gru's Plan meme template\n\nStep 1: Build a beautiful microservices architecture\nStep 2: Deploy to Kubernetes\nStep 3: ???\nStep 4: [Gru looks confused at step 3]\n\nWhat goes wrong at step 3?"
+  },
+  {
+    "id": "meme-08",
+    "template": "Spiderman pointing",
+    "prompt": "🕷️ Spiderman Pointing at Spiderman meme template\n\nOne Spiderman: Your AI agent\nOther Spiderman: ???\n\nWhat's pointing at your AI agent and why? Caption it."
+  },
+  {
+    "id": "meme-09",
+    "template": "Exit 12 highway",
+    "prompt": "🛣️ Exit 12 Highway Meme template\n\nStraight: Following best practices and proper testing\nExit ramp your car is swerving towards: ???\n\nWhat shortcut are you taking? Caption the exit."
+  },
+  {
+    "id": "meme-10",
+    "template": "Domino effect",
+    "prompt": "🁢 Domino Effect meme template\n\nTiny domino: A developer pushes 'one small change'\nGiant final domino: ???\n\nWhat's the catastrophic outcome? Caption the big domino."
+  }
+]

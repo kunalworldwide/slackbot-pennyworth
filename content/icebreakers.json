@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ice-01",
+    "prompt": "Worst production incident you've survived? Reply in exactly 6 words. Go."
+  },
+  {
+    "id": "ice-02",
+    "prompt": "Your Kubernetes cluster gains sentience. What's the first thing it does?"
+  },
+  {
+    "id": "ice-03",
+    "prompt": "You mass-delete production pods. But plot twist — it actually improves performance. What happened?"
+  },
+  {
+    "id": "ice-04",
+    "prompt": "An AI agent writes your next PR. What's the commit message?"
+  },
+  {
+    "id": "ice-05",
+    "prompt": "You get ONE magic power for your infrastructure. But it has a catch. What's the power and what's the catch?"
+  },
+  {
+    "id": "ice-06",
+    "prompt": "Name a technology that you mass-adopted because of a conference talk. No shame."
+  },
+  {
+    "id": "ice-07",
+    "prompt": "Your monitoring dashboard becomes self-aware and starts filing Jira tickets. What's the first ticket title?"
+  },
+  {
+    "id": "ice-08",
+    "prompt": "Hot take: tell us the hill you'll die on about cloud infrastructure. One sentence only."
+  },
+  {
+    "id": "ice-09",
+    "prompt": "It's 3 AM. PagerDuty goes off. You check the alert and it's... [complete the horror story in one sentence]"
+  },
+  {
+    "id": "ice-10",
+    "prompt": "Your company's entire tech stack becomes a person at CLOUDxAI. How do they introduce themselves?"
+  },
+  {
+    "id": "ice-11",
+    "prompt": "You're writing a dating profile for Kubernetes. What's the bio?"
+  },
+  {
+    "id": "ice-12",
+    "prompt": "If your CI/CD pipeline was a Bengaluru traffic route, which route would it be and why?"
+  },
+  {
+    "id": "ice-13",
+    "prompt": "Describe your current project using only Kubernetes resource names. (e.g., 'A CronJob that creates Jobs that create Pods that crash.')"
+  },
+  {
+    "id": "ice-14",
+    "prompt": "You can mass-ban ONE tool/technology from the industry forever. What goes and why?"
+  }
+]
