@@ -11,13 +11,13 @@ function registerCommands(app) {
       const schedule = await fetcher.getLiveSchedule();
       await respond({
         blocks: blocks.scheduleBlocks(schedule),
-        response_type: 'ephemeral'
+        response_type: 'in_channel'
       });
     } catch (err) {
       console.error('Schedule command error:', err.message);
       await respond({
         text: `Failed to fetch schedule. Check <https://cloudconf.ai|cloudconf.ai> for the latest.`,
-        response_type: 'ephemeral'
+        response_type: 'in_channel'
       });
     }
   });
@@ -30,13 +30,13 @@ function registerCommands(app) {
       const url = process.env.CONFERENCE_URL || 'https://cloudconf.ai';
       await respond({
         blocks: blocks.speakerBlocks(speakers, url),
-        response_type: 'ephemeral'
+        response_type: 'in_channel'
       });
     } catch (err) {
       console.error('Speakers command error:', err.message);
       await respond({
         text: `Failed to fetch speakers. Check <https://cloudconf.ai|cloudconf.ai> for the latest.`,
-        response_type: 'ephemeral'
+        response_type: 'in_channel'
       });
     }
   });
@@ -122,7 +122,7 @@ function registerCommands(app) {
       if (realTalks.length === 0) {
         await respond({
           text: 'No talks available yet. Check back soon!',
-          response_type: 'ephemeral'
+          response_type: 'in_channel'
         });
         return;
       }
@@ -131,7 +131,7 @@ function registerCommands(app) {
       const hallEmoji = { 'Hall A': '🅰️', 'Hall B': '🅱️', 'Hall C': '🅲️', 'Board Room': '🏠' }[talk.hall] || '🎤';
 
       await respond({
-        response_type: 'ephemeral',
+        response_type: 'in_channel',
         blocks: [
           {
             type: 'section',
@@ -165,7 +165,7 @@ function registerCommands(app) {
       console.error('Random talk error:', err.message);
       await respond({
         text: `Couldn't fetch the schedule. Try again in a bit!`,
-        response_type: 'ephemeral'
+        response_type: 'in_channel'
       });
     }
   });
