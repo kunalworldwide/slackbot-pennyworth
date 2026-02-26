@@ -247,7 +247,7 @@ function welcomeBlocks() {
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: "*Here's your quick start:*\n→ Introduce yourself in <#introductions> (name, role, one hot take about cloud)\n→ Check the schedule: <https://cloudconf.ai|cloudconf.ai>\n→ Jump into <#daily-buzz> for daily tech debates"
+        text: "*Here's your quick start:*\n→ Introduce yourself in *#introductions* (name, role, one hot take about cloud)\n→ Check the schedule: <https://cloudconf.ai|cloudconf.ai>\n→ Jump into *#hallway-track* for daily tech debates, quizzes, and hot takes\n→ Try `/cloudxai-countdown` to see how close we are"
       }
     },
     { type: 'divider' },
